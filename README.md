@@ -31,7 +31,7 @@ A high-dimensional application of Flow Matching mapping the "0" digit manifold t
 
 ### The Loss Function
 The velocity field $v_\theta(x_t, t)$ is trained to minimize the Flow Matching objective:
-$$\mathcal{L}_{FM} = \mathbb{E}_{t, q(x_0, x_1)} [ \| v_\theta(x_t, t) - (x_1 - x_0) \|^2 ]$$
+$$\mathcal{L}_{FM} = \mathbb{E}_{t, q(x_0, x_1)} \left[ \| v_\theta(x_t, t) - (x_1 - x_0) \|^2 \right]$$
 where the probability path is defined as $x_t = t x_1 + (1-t) x_0$. This creates a constant-velocity "straight" path between the noise and the data.
 
 ### Sample Generation
